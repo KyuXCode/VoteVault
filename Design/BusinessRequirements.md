@@ -1,1 +1,8 @@
+# Business Requirements
 
++ BR1: We want to help county clerks and election officials manage election equipment inventories efficiently.
+  + The system plays a crucial role in managing Indiana's election equipment, and efficient inventory management is essential for completing audits and certifications required before elections. Since county clerks and election officials are responsible for maintaining accurate records of equipment, the system must streamline these processes, reduce manual work and errors, and be able to produce random data for audits. This business requirement arises from the critical need to assist users in efficiently managing large amounts of data, ensuring compliance and readiness for elections.
+
+
++ BR2: We want to provide an at-a-glance summary of critical election data on a dashboard.
+  + Given that county clerks and election officials are the primary users of the system and often have limited technological proficiency, having a clear, easily navigable dashboard is essential. This dashboard should offer quick access to key inventory metrics, generate random records for audits, and other critical election-related data. Since users need to make informed decisions swiftly and efficiently, this business requirement is necessary to improve their workflow and ensure they have all relevant data available at a glance, minimizing the time spent searching through the system.

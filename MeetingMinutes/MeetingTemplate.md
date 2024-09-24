@@ -27,3 +27,7 @@ Whatever discussed in this week.
 ## Things Clarified
 
 Whatever the plan is for next week.
+
+## Tasks distributed
+
+Task before next meeting
