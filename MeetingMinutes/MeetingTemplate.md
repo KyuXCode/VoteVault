@@ -14,7 +14,7 @@ Wherever the meeting was.
 
 ## Present
 
-Whoever were present in the meeting. Write only the first names of team members and clients. Each name should be separated by commas.
+Carson, Jose, Kevin, Logan
 
 ## Minute Recorder
 
