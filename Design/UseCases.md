@@ -6,7 +6,7 @@
 # Use Cases
 
 ### UC1: User Authentication and Authorization
-- Description: All users must be authenticated before accessing the system. A magic link is sent to the user’s registered email, allowing one-time access for a limited period to improve security.
+- Description: All users must be authenticated before accessing the system before proceeding in the system. This would also let the system determine what permission you have and display data or provide action accordingly.
 - Actors: Common users, system admin, VSTOP personnel
 - Flow: User will be on the login page if they haven't done so, or it expired. Enters their email address and password. It will authenticate the user with backend and give back its authorization status with a token that expire every 15 minutes so user only able to see data or perform action they are allowed to. If email doesn't exist in the system it will ask if they want to register and take them to the registration page.
 - BR1
