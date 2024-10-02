@@ -31,10 +31,12 @@ WHATEVER COMPANY or CORRESPONDENCE
 - [Team meeting minutes](MeetingMinutes/Team)
 - [Mentor meeting minutes](MeetingMinutes/Mentor)
 - [Client partner meeting minutes](MeetingMinutes/ClientPartner)
+- [Jira Board ScreenShot](AuxiliaryFiles/Documents/JiraBoard.png)
+- [Jira Task ScreenShot](AuxiliaryFiles/Documents/JiraTaskDetail.png)
 
 ## **Code Repositories**
 
 - [Mobile App - Android](https://www.github.com/WHEREEVER_THE_ANDROID_CODE_IS/)
 - [Php Backend](https://www.github.com/WHEREEVER_THE_PHP_CODE_IS)
-- Others if more.
+
 
