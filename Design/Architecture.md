@@ -1,5 +1,6 @@
 # Architecture
-![Architecture_Diagram](../AuxiliaryFiles/Documents/architecture-graph.png)
+![Architecture_Diagram](../AuxiliaryFiles/Documents/ArchitectureGraph.png)
+![RelationshipDiagram](../AuxiliaryFiles/Documents/RelationshipDiagram.png)
 
 # Explanation
 ## Database
