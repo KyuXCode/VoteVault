@@ -33,42 +33,45 @@
 #### FR11: The system shall allow many existing entries with common attributes to be deleted in bulk.
 - UC3
 - MEDIUM
-#### FR12: The system shall display a dashboard with shortcut to add a new entries
+### FR12: The system shall have error code for different errors
+- UC4
+- LOW
+#### FR13: The system shall display a dashboard with shortcut to add a new entries
 - UC5
 - MEDIUM
-#### FR13: The system shall display a dashboard with shortcut to view entries
+#### FR14: The system shall display a dashboard with shortcut to view entries
 - UC5
 - MEDIUM
-#### FR14: The dashboard should have shortcuts to create entries
+#### FR15: The dashboard should have shortcuts to create entries
 - UC5
 - MEDIUM
-#### FR15: The system should be to display entries as a table
+#### FR16: The system should be to display entries as a table
 - UC6
 - MEDIUM
-#### FR16: The system should be to display entries as a table and allow to apply filters and re-order
+#### FR17: The system should be to display entries as a table and allow to apply filters and re-order
 - UC7
 - MEDIUM
-#### FR17: The system should be able to pull data randomly and form into a table
+#### FR18: The system should be able to pull data randomly and form into a table
 - UC8
 - MEDIUM
-#### FR18: The system admin shall have the ability to approve or decline users that register
+#### FR19: The system admin shall have the ability to approve or decline users that register
 - UC10
 - HIGH
-#### FR19: The system admin shall have the ability to edit user’s detail
+#### FR20: The system admin shall have the ability to edit user’s detail
 - UC10
 - HIGH
-#### FR20: The system admin shall have the ability to delete an existing user
+#### FR21: The system admin shall have the ability to delete an existing user
 - UC10
 - HIGH
 
 # Non-Functional Requirements
-#### NR1: The system shall have error code for different errors
+### NR1: Display error when data enter incorrectly
 - UC4
 - LOW
 #### NR2: The system shall display descriptive error base off the error code
 - UC4
 - LOW
-#### NR3: The system shall display a dashboard that allows users to make changes to the database
+#### NR3: The system shall display a dashboard that allows users to access tools quickly
 - UC5
 - MEDIUM
 #### NR4: The system shall display a dashboard that allows users to access multiple different views of the data

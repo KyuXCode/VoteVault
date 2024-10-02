@@ -24,9 +24,9 @@
 - BR1
 
 ### UC4: Descriptive Error Messages
-- Description: Provides users with detailed error messages that help identify and fix issues during interaction with the system. This enhances user experience by clearly outlining what went wrong and offering troubleshooting guidance.
+- Description: Provides users with detailed error messages that help identify and fix issues during interaction with the system. This enhances user experience by clearly outlining what went wrong and offering troubleshooting guidance. 
 - Actors: County Clerks, Election Officials, System Admins
-- Flow: When user performs an invalid operation (missing a required field, entering incorrect data). The system validates the input and detects the error. A descriptive error message appears on the screen, explaining the issue.
+- Flow: When user performs an invalid operation (missing a required field, entering incorrect data). The system validates the input and detects the error. A descriptive error message appears on the screen, explaining the issue. Invalid entry will not save to the database
 - BR2
 
 ### UC5: At-a-glance Dashboard
