@@ -7,11 +7,20 @@
   - Admin inherits the User class and also has the ability to manage other users.
 - Database Entities
   - County
+    - Refers to a State County by its unique name.
   - Contract
+    - Refers to a Contract between a County and Certifications.
   - Certification
+    - Refers to a Certification created by a user
   - Vendor
+    - Refers to a vendor creatde by user.
   - Inventory Unit
+    - Refers to an inventory unit possessed by a county
   - Expense
+    - Refers to financial Expenses of each County.
   - Component
+    - refers to a Component of a Certification or Inventory Unit
   - Storage Location
+    - Refers to the physical location of the Inventory Unit
   - Disposition
+    - Refers to a Disposition of an Inventory Unit.
