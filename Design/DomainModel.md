@@ -9,7 +9,7 @@
   - County
     - Refers to a State County by its unique name
   - Contract
-    - Refers to a Contract between a County and Certifications
+    - Refers to a Contract handled by a county
   - Certification
     - Refers to a Certification created by a user
   - Vendor
