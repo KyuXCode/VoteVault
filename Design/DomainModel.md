@@ -9,9 +9,9 @@
   - County
   - Contract
   - Certification
-  -  Vendor
-  -  Inventory Unit
-  -  Expense
-  -  Component
-  -  Storage Location
-  -  Disposition
+  - Vendor
+  - Inventory Unit
+  - Expense
+  - Component
+  - Storage Location
+  - Disposition
