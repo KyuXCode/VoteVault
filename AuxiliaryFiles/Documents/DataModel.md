@@ -14,6 +14,19 @@
 
 ## Entity Properties
 
+### Vendor
+| Property Name | Data Type | Optional | Potential Values                  |
+|---------------|-----------|----------|-----------------------------------|
+| Name          | string    |          |                                   |
+| Address       | string    | yes      |                                   |
+| City          | string    | yes      |                                   |
+| State         | string    | yes      |                                   |
+| Zip           | string    | yes      |                                   |
+| Contact Name  | string    | yes      |                                   |
+| Contact Email | string    | yes      |                                   |
+| Contact Phone | string    | yes      |                                   |
+| Product       | string    |          | EPB, VS, EPB & VS, Service, Other |
+
 ### Certification
 | Property Name                | Data Type | Optional | Potential Values                                             |
 |------------------------------|-----------|----------|--------------------------------------------------------------|
@@ -28,33 +41,28 @@
 | Action                       | string    |          | Approved, Pending, Denied, Other                             |
 | System Type                  | string    |          | VS, EPB                                                      |
 | System Base                  | string    |          | DRE, OpScan, PC/Laptop, Tablet, Custom Hardware, Other       |
+| Vendor id                    | int       |          |                                                              |
 
 ### Component
-| Property Name | Data Type | Potential Values                                                     |
-|---------------|-----------|----------------------------------------------------------------------|
-| Name          | string    |                                                                      |
-| Description   | string    |                                                                      |
-| Type          | string    | DRE, OpScan, BMD, VVPAT, COTS, Other, Hardware, Software, Peripheral |
-
-### Contract
-| Property Name | Data Type | Potential Values                |
-|---------------|-----------|---------------------------------|
-| Begin Date    | Date      |                                 |
-| End Date      | Date      |                                 |
-| Type          | string    | Purchase, Lease, Service, Other |
+| Property Name    | Data Type | Potential Values                                                     |
+|------------------|-----------|----------------------------------------------------------------------|
+| Name             | string    |                                                                      |
+| Description      | string    |                                                                      |
+| Type             | string    | DRE, OpScan, BMD, VVPAT, COTS, Other, Hardware, Software, Peripheral |
+| Certification id | int       |                                                                      |
 
 ### County
 | Property Name | Data Type | Potential Values |
 |---------------|-----------|------------------|
 | Name          | string    |                  |
 
-### Disposition
-| Property Name | Data Type | Potential Values |
-|---------------|-----------|------------------|
-| Date          | Date      |                  |
-| Method        | string    |                  |
-| Entity        | string    |                  |
-| Amount        | float     |                  |
+### Contract
+| Property Name    | Data Type | Potential Values                |
+|------------------|-----------|---------------------------------|
+| Begin Date       | Date      |                                 |
+| End Date         | Date      |                                 |
+| Type             | string    | Purchase, Lease, Service, Other |
+| Certification id | int       |                                 |
 
 ### Expense
 | Property Name | Data Type | Potential Values |
@@ -63,6 +71,8 @@
 | Amount        | float     |                  |
 | Fund          | string    |                  |
 | Owner         | string    |                  |
+| Contract id   | int       |                  |
+| County id     | int       |                  |
 
 ### Inventory Unit
 | Property Name    | Data Type | Potential Values                              |
@@ -71,15 +81,29 @@
 | Acquisition Date | Date      |                                               |
 | Condition        | string    | New, Excellent, Good, Worn, Damaged, Unusable |
 | Usage            | string    | Active, Spare, Display, Other, Inactive       |
+| Expense id       | int       |                                               |
+| Component id     | int       |                                               |
+
+### Disposition
+| Property Name    | Data Type | Potential Values |
+|------------------|-----------|------------------|
+| Date             | Date      |                  |
+| Method           | string    |                  |
+| Entity           | string    |                  |
+| Amount           | float     |                  |
+| InventoryUnit id | int       |                  |
+
 
 ### Storage Location
-| Property Name | Data Type | Potential Values |
-|---------------|-----------|------------------|
-| Name          | string    |                  |
-| Address       | string    |                  |
-| City          | string    |                  |
-| State         | string    |                  |
-| Zip           | string    |                  |
+| Property Name    | Data Type | Potential Values |
+|------------------|-----------|------------------|
+| Name             | string    |                  |
+| Address          | string    |                  |
+| City             | string    |                  |
+| State            | string    |                  |
+| Zip              | string    |                  |
+| InventoryUnit id | int       |                  |
+
 
 ### User
 | Property Name    | Data Type | Potential Values     |
@@ -92,15 +116,3 @@
 | Supervisor Email | string    |                      |
 | Organization     | string    | County, State, VSTOP |
 
-### Vendor
-| Property Name | Data Type | Optional | Potential Values                  |
-|---------------|-----------|----------|-----------------------------------|
-| Name          | string    |          |                                   |
-| Address       | string    | yes      |                                   |
-| City          | string    | yes      |                                   |
-| State         | string    | yes      |                                   |
-| Zip           | string    | yes      |                                   |
-| Contact Name  | string    | yes      |                                   |
-| Contact Email | string    | yes      |                                   |
-| Contact Phone | string    | yes      |                                   |
-| Product       | string    |          | EPB, VS, EPB & VS, Service, Other |
