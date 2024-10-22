@@ -1,16 +1,16 @@
 # Sample Data / Data Model
 
 ## Entities
-1. Certification
-2. Component
-3. Contract
+1. Vendor
+2. Certification
+3. Component
 4. County
-5. Disposition
+5. Contract
 6. Expense
-7. Inventory Unit
-8. Storage Location
-9. User
-10. Vendor
+7. Inventory
+8. Disposition
+9. Storage Location
+10. User
 
 ## Entity Properties
 
