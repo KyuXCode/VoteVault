@@ -31,8 +31,8 @@ WHATEVER COMPANY or CORRESPONDENCE
 - [Team meeting minutes](MeetingMinutes/Team)
 - [Mentor meeting minutes](MeetingMinutes/Mentor)
 - [Client partner meeting minutes](MeetingMinutes/ClientPartner)
-- [Jira Board ScreenShot](AuxiliaryFiles/Documents/JiraBoard.png)
-- [Jira Task ScreenShot](AuxiliaryFiles/Documents/JiraTaskDetail.png)
+- [Jira Board ScreenShot](AuxiliaryFiles/Resources/JiraBoard.png)
+- [Jira Task ScreenShot](AuxiliaryFiles/Resources/JiraTaskDetail.png)
 
 ## **Code Repositories**
 

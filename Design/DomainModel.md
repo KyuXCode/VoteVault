@@ -1,5 +1,5 @@
 # Domain Model
-![DomainModelDiagram](../AuxiliaryFiles/Documents/DomainModelDiagram.png)
+![DomainModelDiagram](../AuxiliaryFiles/Resources/DomainModelDiagram.png)
 ## Domain Model Explanation
 - User
   - User is an abstract class that is the super class for Admin because Admin shares all properties. User also has access to edit parts of the database through CRUD function calls. 
