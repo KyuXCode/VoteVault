@@ -44,10 +44,15 @@ composer global require laravel/installer
     ```
     git clone https://github.com/KyuXCode/vote-vault-api.git
     ```
-5. Create ```.env``` file in the project directory if not already
-6. Find ```.env.example``` in the project directory
-7. Find copy the content over to your ```.env``` file
-8. Find this section in ```.env``` file
+5. Run the following command in the project terminal
+    ```
+    composer update
+    composer install   
+    ```
+6. Create ```.env``` file in the project directory if not already
+7. Find ```.env.example``` in the project directory
+8. Find copy the content over to your ```.env``` file
+9. Find this section in ```.env``` file
     ```
     DB_CONNECTION=pgsql
     DB_HOST=127.0.0.1
@@ -56,7 +61,7 @@ composer global require laravel/installer
     DB_USERNAME=
     DB_PASSWORD=
     ```
-9. Make sure ```DB_HOST``` ```DB_PORT``` ```DB_USERNAME``` ```DB_PASSWORD``` all match with your setting in pgAdmin 4
+10. Make sure ```DB_HOST``` ```DB_PORT``` ```DB_USERNAME``` ```DB_PASSWORD``` all match with your setting in pgAdmin 4
 
 ## Start Using the API
 1. Open the repository you cloned in previous step in any IDE you preferred, I'm using phpStorm but Visual Studio Code works too
