@@ -4,3 +4,12 @@
 # Editor-based HTTP Client requests
 /httpRequests/
 .idea
+
+.DS_Store
+AuxiliaryFiles/.DS_Store
+AuxiliaryFiles/MeetingPictures/.DS_Store
+AuxiliaryFiles/MeetingPictures/2024-09-19/.DS_Store
+AuxiliaryFiles/Resources/.DS_Store
+Documentation/.DS_Store
+MeetingMinutes/.DS_Store
+Presentations/.DS_Store
