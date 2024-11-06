@@ -41,7 +41,7 @@ Go to your browser and enter this link: [http://127.0.0.1:8000/](http://127.0.0.
 Make sure you're in the ```vote-vault-frontend``` directory
 ```
 cd ..
-cd vote-vault-api
+cd vote-vault-frontend
 ```
 Start the docker container for the api.
 ```
