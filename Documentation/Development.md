@@ -1,85 +1,71 @@
 # Vote Vault API
 
-This project used php with Laravel 11, see below instructions to replicate a local enviroment for testing
-
+This project used php with Laravel 11 & PostgreSQL 16, see below instructions to replicate a local environment for testing.
 
 ## Install Prerequisites
 
-### Install PostgreSQL
-- We used PostgreSQL 16 at the time of the project
-- Visit this [link](https://www.postgresql.org/download/) to install PostgreSQL
-- Select the OS you're on and make sure you install the EDB installer too
-  - Here's what it located on the installation page for Window (See the red highlight area): ![EDB Installer location](./InstructionScreenshots/EDB_installer_location.png)
+### Install Docker Desktop
+- Install Docker Desktop on your machine from this [documentation](https://docs.docker.com/get-started/get-docker/) or the link below.
+  - [Mac](https://docs.docker.com/desktop/install/mac-install/)
+  - [Windows](https://docs.docker.com/desktop/install/windows-install/)
+  - [Linux](https://docs.docker.com/desktop/install/linux/)
 
-### Install php & Composer
-- We used php 8.3.12 & Composer 2.7.7 at the time of the project 
-- If you don't have PHP and Composer installed on your local machine, the following commands will install PHP, Composer, and the Laravel installer on macOS, Windows, or Linux:
+### Setup Directory
+- Make sure you're under **VoteVault** folder
+- Clone the following repositories in that folder
+  - https://github.com/KyuXCode/vote-vault-frontend
+  - https://github.com/KyuXCode/vote-vault-api
+- You can do it via command line:
+  - Right-click on the VoteVault folder and select **New Terminal at Folder** or **Shift+Right-click** to an empty place on that folder to open a command line for Windows. ![Folder dropdown menu](./InstructionScreenshots/folder_dropdown_menu.png)
+  - Run these commands (it assumes you have git installed and git command accessible in PATH environment variable): 
+   ```
+   git clone https://github.com/KyuXCode/vote-vault-api.git
+   git clone https://github.com/KyuXCode/vote-vault-frontend.git
+   ```
+  - Your folder should be something like this with ```vote-vault-api``` & ```vote-vault-frontend``` in your ```VoteVault``` folder. ![folder after cloning](./InstructionScreenshots/folder_after_cloning.png)
+- Open the Docker Desktop app before the next stage ![Docker Desktop Logo](./InstructionScreenshots/Docker_Desktop_logo.png)
 
-#### For macOS: 
+## Start the Project Locally
+### 1. Make sure you start the ```vote-vault-api``` first.
+Make sure you're in the ```vote-vault-api``` directory 
 ```
-/bin/bash -c "$(curl -fsSL https://php.new/install/mac)"
+cd vote-vault-api
 ```
+Start the docker container for the api
+```
+docker compose up --build
+```
+Go to your browser and enter this link: [http://127.0.0.1:8000/](http://127.0.0.1:8000/), you should see a default Laravel page ![Laravel Index Page](./InstructionScreenshots/laravel_landing_page.png)
 
-#### For Windows Powershell:
+### 2. Then start ```vote-vault-frontend```
+Make sure you're in the ```vote-vault-frontend``` directory
 ```
-Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://php.new/install/windows'))
+cd ..
+cd vote-vault-api
 ```
+Start the docker container for the api.
+```
+docker compose up --build
+```
+Go to your browser and enter this link: [http://127.0.0.1:3000/](http://127.0.0.1:3000/), you should see the React frontend. ![Frontend Index Page](./InstructionScreenshots/vote_vault_frontend.png)
 
-#### For Linux:
-```
-/bin/bash -c "$(curl -fsSL https://php.new/install/linux)"
-```
 
-After running one of the commands above, you should restart your terminal session. To update PHP, Composer, and the Laravel installer after installing them via php.new, you can re-run the command in your terminal.
-If you already have PHP and Composer installed, you may install the Laravel installer via Composer:
-```
-composer global require laravel/installer
-```
 
-## Setup Local Environment
-1. Open pgAdmin4 that were installed by the EDB installation ![pgAdmin4](./InstructionScreenshots/pgAdmin4.png)
-2. Right-click on your PostgreSQL tab & select create, then select Database ![Drop Down Menu](./InstructionScreenshots/pgAdminDropDown.png)
-3. Enter ```vote_vault_api``` in the Database field & click save ![Create DB in Postgres](./InstructionScreenshots/CreateDB.png)
-4. Clone this repository -> [Vault Vote API](https://github.com/KyuXCode/vote-vault-api) in any directory you want
-    ```
-    git clone https://github.com/KyuXCode/vote-vault-api.git
-    ```
-5. Run the following command in the project terminal
-    ```
-    composer update
-    composer install   
-    ```
-6. Create ```.env``` file in the project directory if not already
-7. Find ```.env.example``` in the project directory
-8. Find copy the content over to your ```.env``` file
-9. Find this section in ```.env``` file
-    ```
-    DB_CONNECTION=pgsql
-    DB_HOST=127.0.0.1
-    DB_PORT=5432
-    DB_DATABASE=vote_vault_api
-    DB_USERNAME=
-    DB_PASSWORD=
-    ```
-10. Make sure ```DB_HOST``` ```DB_PORT``` ```DB_USERNAME``` ```DB_PASSWORD``` all match with your setting in pgAdmin 4
-
-## Start Using the API
-1. Open the repository you cloned in previous step in any IDE you preferred, I'm using phpStorm but Visual Studio Code works too
-2. Open the terminal once you make sure you're in the project directory enter the following to start the api, this should run the migration and start it locally
-    ```
-    php artisan migrate
-    php artisan serve
-    ```
-3. Your terminal should display the local address for the api. Open the address in a browser ![php serve terminal example](./InstructionScreenshots/php_serve_terminal.png)
-4. The following are the routes available for making CRUD calls
-    ```
-    /api/vendors
-    /api/vendors/{id}
-    /api/certifications
-    /api/certifications/{id}
-    /api/components
-    /api/components/{id}
-    /api/county
-    /api/county/{id}
-    ```
-   
+## Common Errors
+### Error 1: Connection to server at "postgresql" failed: connection refused 
+- Sometimes ```vote_vault_dev``` image finish before ```postgres-db``` image which will throw the error like below when you ran ```docker compose up --build``` in ```vote-vault-api``` folder. ![docker issue](./InstructionScreenshots/docker_starting_order_issue.png)
+- **Solution 1:** Go to docker decktop and find your ```vote-vault-api``` container and start the ```vote_vault_dev``` image again by clicking the highlighted play button ![Restart Docker Image](./InstructionScreenshots/restart_docker_image.png)
+- **Solution 2:** sometime your local port at ```5432``` is taken so the container couldn't use the port to connect to the PostgreSQL database, run the following command (or equivalent on window) to check if the port is currently in use
+- In your terminal, do this to see if it's in used
+  ```
+  sudo lsof -i :5432
+  ```
+  ![pid example](./InstructionScreenshots/pid_example.png)
+- Kill all the processes that are running under this port
+  ```
+  sudo kill -9 <pid>
+  ```
+- Run the command again to verify no process is running now
+  ```
+  sudo lsof -i :5432
+  ```
