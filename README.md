@@ -36,7 +36,7 @@ WHATEVER COMPANY or CORRESPONDENCE
 
 ## **Code Repositories**
 
-- [Mobile App - Android](https://www.github.com/WHEREEVER_THE_ANDROID_CODE_IS/)
-- [Php Backend](https://www.github.com/WHEREEVER_THE_PHP_CODE_IS)
+- [Vote Vault Frontend](https://github.com/KyuXCode/vote-vault-frontend)
+- [Vote Vault API](https://github.com/KyuXCode/vote-vault-api)
 
 
