@@ -23,26 +23,36 @@ git clone https://github.com/KyuXCode/vote-vault-frontend
     ```
     cd vote-vault-api
     ```
-2. Start the docker container for the api
+2. Make sure you pull the most recent changes on the main branch
+    ```
+    git checkout main
+    git pull
+    ```
+3. Start the docker container for the api
     ```
     docker compose up --build
     ```
-3. Go to your browser and enter this link: [http://127.0.0.1:8000/](http://127.0.0.1:8000/), you should see a default Laravel page ![Laravel Index Page](./InstructionScreenshots/laravel_landing_page.png)
+4. Go to your browser and enter this link: [http://127.0.0.1:8000/](http://127.0.0.1:8000/), you should see a default Laravel page ![Laravel Index Page](./InstructionScreenshots/laravel_landing_page.png)
 
 
 ### Clone the api into a different directory with:
 ```
 git clone https://github.com/KyuXCode/vote-vault-api
 ```
-Make sure you're in the ```vote-vault-frontend``` directory
-```
-cd vote-vault-api
-```
-Start the docker container for the api.
-```
-docker compose up --build
-```
-Go to your browser and enter this link: [http://127.0.0.1:3000/](http://127.0.0.1:3000/), you should see the React frontend. ![Frontend Index Page](./InstructionScreenshots/vote_vault_frontend.png)
+1. Make sure you're in the ```vote-vault-frontend``` directory
+    ```
+    cd vote-vault-api
+    ```
+2. Make sure you pull the most recent changes on the main branch
+    ```
+    git checkout main
+    git pull
+    ```
+3. Start the docker container for the api.
+    ```
+    docker compose up --build
+    ```
+4. Go to your browser and enter this link: [http://127.0.0.1:3000/](http://127.0.0.1:3000/), you should see the React frontend. ![Frontend Index Page](./InstructionScreenshots/vote_vault_frontend.png)
 
 ## Common Errors
 ### Error 1: Connection to server at "postgresql" failed: connection refused
