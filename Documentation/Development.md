@@ -43,7 +43,7 @@ Make sure you're in the ```vote-vault-frontend``` directory
 cd ..
 cd vote-vault-frontend
 ```
-Start the docker container for the api.
+Start the docker container for the frontend.
 ```
 docker compose up --build
 ```
