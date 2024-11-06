@@ -1,4 +1,4 @@
-# Vote Vault API
+# Vote Vault
 
 This project used php with Laravel 11 & PostgreSQL 16, see below instructions to replicate a local environment for testing.
 
