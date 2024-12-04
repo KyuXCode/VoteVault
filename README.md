@@ -20,7 +20,7 @@ The primary user-base is county clerks and other election deputies. This matters
 ## **Client Partner Information**
 
 ### *Company:*
-WHATEVER COMPANY or CORRESPONDENCE
+Indiana VSTOP
 
 ### *People:*
 - Duncan Klemm

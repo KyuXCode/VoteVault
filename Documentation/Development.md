@@ -31,10 +31,20 @@ Make sure you're in the ```vote-vault-api``` directory
 ```
 cd vote-vault-api
 ```
-Start the docker container for the api
-```
-docker compose up --build
-```
+- Only run the command below on the first time you run the docker container or if you made any changes in the api code
+    ```
+    docker compose up --build
+    ```
+
+- Run the command below to stop the container
+    ```
+    docker compose down
+    ```
+
+- Run this to restart (unless you made changes)
+    ```
+    docker compose up 
+    ```
 Go to your browser and enter this link: [http://127.0.0.1:8000/](http://127.0.0.1:8000/), you should see a default Laravel page ![Laravel Index Page](./InstructionScreenshots/laravel_landing_page.png)
 
 ### 2. Then start ```vote-vault-frontend```
@@ -43,12 +53,35 @@ Make sure you're in the ```vote-vault-frontend``` directory
 cd ..
 cd vote-vault-frontend
 ```
-Start the docker container for the frontend.
+Start the docker container for the frontend. (You only have to run this command once, the frontend is setup for hot-reload)
 ```
 docker compose up --build
 ```
+- Run the command below to stop the container
+    ```
+    docker compose down
+    ```
+
+- Run this to restart
+    ```
+    docker compose up 
+    ```
 Go to your browser and enter this link: [http://127.0.0.1:3000/](http://127.0.0.1:3000/), you should see the React frontend. ![Frontend Index Page](./InstructionScreenshots/vote_vault_frontend.png)
 
+## Testing
+### Backend Testing
+We're using phpunit test for this project which is located under the tests folder
+- To run the existing tests open docker desktop and click on ```vote_vault_dev``` ![Open Docker Image](./InstructionScreenshots/select_docker_image.png)
+- Select the Exec tab to open terminal of the image ![Open Docker Terminal](./InstructionScreenshots/select_image_terminal.png)
+- Run the following command
+    ```
+    php artisan test --parallel
+    ```
+- If you need data to test, run the following for seeders, it will generate data for you
+  ```
+  php artisan db:seed
+  ```
+- You should see if they passed or not ![Test Result](./InstructionScreenshots/Test_result.png)
 
 
 ## Common Errors
