@@ -1,3 +1,9 @@
+# Log in
+1. You will be redirect to a login page if you have not log in or if your login credential expired ![Login View](./InstructionScreenshots/login_page.png)
+2. If you don't remember you password but in need to use the tool. You can log in by clicking Sign in with link and input the email you use for the account ![magic link](./InstructionScreenshots/magic_link_sender.png)
+3. You will receive an email with an URL that will expire with in 30 minutes.
+
+
 # How to Use Vote Vault
 1. You should see something like this when you accessed the home page. ![Home page](./InstructionScreenshots/vote_vault_frontend.png)
 2. Select dashboard to see an overview for some basic stats. ![dashboard view](./InstructionScreenshots/dashboard_view.png)
