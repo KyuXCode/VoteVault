@@ -82,7 +82,9 @@ We're using phpunit test for this project which is located under the tests folde
   php artisan db:seed
   ```
 - You should see if they passed or not ![Test Result](./InstructionScreenshots/Test_result.png)
-
+### Frontend Testing
+We're using vite test for frontend testing
+- To run existing tests, enter the command ```npm test```
 
 ## Common Errors
 ### Error 1: Connection to server at "postgresql" failed: connection refused 
