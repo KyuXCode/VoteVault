@@ -1,5 +1,10 @@
+# Register
+1. Visit ```/register``` to register ![Register page](./InstructionScreenshots/RegisterPage.png)
+2. If anything is wrong or missing you will see a section up top regarding what field was missing.
+3. Once you register wait until management approve it from pending to active profile
+
 # Log in
-1. You will be redirect to a login page if you have not log in or if your login credential expired ![Login View](./InstructionScreenshots/login_page.png)
+1. You will be redirected to a login page if you have not log in or if your login credential expired ![Login View](./InstructionScreenshots/login_page.png)
 2. If you don't remember you password but in need to use the tool. You can log in by clicking Sign in with link and input the email you use for the account ![magic link](./InstructionScreenshots/magic_link_sender.png)
 3. You will receive an email with an URL that will expire with in 30 minutes.
 
