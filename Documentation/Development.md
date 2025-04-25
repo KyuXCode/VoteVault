@@ -104,3 +104,28 @@ We're using vite test for frontend testing
   ```
   sudo lsof -i :5432
   ```
+
+## Testing
+### Running in terminal locally
+- Run test in terminal
+  ```
+  vitest
+  ```
+- Run coverage in terminal
+  ```
+  vitest run --coverage
+  ```
+
+### Running in docker container
+1. Make sure your project is up to date
+2. Start the docker container
+3. Go to the container and select exec
+4. Run the following in the docker terminal
+- Run test in terminal
+  ```
+  npm run test
+  ```
+- Run coverage in terminal
+  ```
+  npm run coverage
+  ```
